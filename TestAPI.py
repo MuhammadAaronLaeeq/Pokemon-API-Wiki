@@ -12,6 +12,13 @@ import ttkbootstrap as ttk
 global uInput
 global inputWidget
 
+'''
+List of Methods within Class (More to come)
+OrganizeMoves: Fetches moves from the API and organizes them alphabetically
+VersionSelectMoveset: Filters out the moves from the specific version specified by user
+displayMoveset: Creates a terminal based list of vetted moves
+'''
+
 class PokemonClass():
     def __init__(self):
         self.e2 = 'https://pokeapi.co/api/v2/pokemon/'
@@ -90,7 +97,7 @@ class PokemonClass():
             True
 
 
-
+#Function used to determine the input of the user
 def userInput():
     Pokemon = input('What Pokemon do you want information for? \n').lower()
     Version = input('For what version? \n').lower()
@@ -100,6 +107,9 @@ def userInput():
 
     return Pokemon, Version
 
+
+
+#Start of incomplete Window implementation
 
 def sendInfo():
     pokemon = inputWidget.get()
@@ -126,6 +136,7 @@ def inputWindow():
 
     window.mainloop()
 
+#End of incomplete window implementation
 
 
 
