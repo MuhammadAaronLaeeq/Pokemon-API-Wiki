@@ -7,6 +7,8 @@ from pprint import pprint as pp
 import tkinter as tk
 import ttkbootstrap as ttk
 
+
+#I will fix this scoping issue
 global uInput
 global inputWidget
 
