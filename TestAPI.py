@@ -1,5 +1,4 @@
-﻿
-from cgitb import text
+﻿from cgitb import text
 from ctypes.wintypes import UINT
 from shutil import move
 import requests
@@ -8,7 +7,8 @@ from pprint import pprint as pp
 import tkinter as tk
 import ttkbootstrap as ttk
 
-
+global uInput
+global inputWidget
 
 class PokemonClass():
     def __init__(self):
